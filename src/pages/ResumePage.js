@@ -1,6 +1,6 @@
 import MyNavbar from "../components/MyNavbar";
 
-const Resume = () => {
+const ResumePage = () => {
     return (
         <div>
             <MyNavbar/>
@@ -9,4 +9,4 @@ const Resume = () => {
     )
 }
 
-export default Resume;
+export default ResumePage;

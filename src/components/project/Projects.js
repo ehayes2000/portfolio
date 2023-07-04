@@ -1,11 +1,8 @@
-import MyNavbar from "../components/MyNavbar";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "./ProjectCard";
 import { Container, Row, Col} from "react-bootstrap";
 
-
 const Projects = () => (
-  <Container fluid className="mt-20">
-    <MyNavbar />
+    <Container fluid className="my-20">
     <Container>
       <h1>
         My Recent <strong>Works</strong>
@@ -43,6 +40,5 @@ const Projects = () => (
       </Row>
     </Container>
   </Container>
-);
-
+)
 export default Projects;
