@@ -1,6 +1,6 @@
 import MyNavbar from "../components/MyNavbar";
 
-const About = () => {
+const AboutPage = () => {
     return (
         <div>
             <MyNavbar/>
@@ -9,4 +9,4 @@ const About = () => {
     )
 }
 
-export default About;
+export default AboutPage;
