@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Experience = ({ title, org, start, end, summary, details, technologies }) => {
+const ExperienceCard = ({ title, org, start, end, summary, details, technologies }) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     const handleExpand = () => {
@@ -32,4 +32,4 @@ const Experience = ({ title, org, start, end, summary, details, technologies }) 
     );
 };
 
-export default Experience;
+export default ExperienceCard;
