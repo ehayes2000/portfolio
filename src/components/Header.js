@@ -1,10 +1,10 @@
 import React from 'react';
+import Skills from "./Skills"
 
 const Header = () => (
-  <div className="bg-light_neutral py-8 sm:px-6 lg:px-8">
-    <div className="max-w-7xl mx-auto">
-      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 items-center">
-        <div className="text-center sm:text-left">
+  <div className="bg-light_neutral py-8 sm:px-4 lg:px-8">
+      <div className="grid grid-cols-1 gap-8 sm:grid-cols-4 items-center">
+        <div className="sm:col-span-2 text-center sm:text-left">
           <h1 className="text-4xl font-bold text-primary">Eric Hayes</h1>
           <h2 className="text-2xl mt-2 text-secondary">Software Developer</h2>
           <p className="text-lg text-primary mt-4">
@@ -13,16 +13,14 @@ const Header = () => (
         </div>
         <div className="flex justify-center">
           <img
-            className="h-80 w-80 rounded-full object-cover"
+            className="h-80 w-80 rounded-full object-cover shadow-2xl"
             src="/images/me.jpg"
             alt="My Picture"
           />
         </div>
+        <Skills/>
       </div>
     </div>
-  </div>
 );
 
 export default Header;
-
-

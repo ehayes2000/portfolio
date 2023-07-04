@@ -22,14 +22,13 @@ const Projects = () => {
         }
     ]
     return (
-        <nav className="bg-light_neutral py-4">
-            <h1 className="text-center font-bold text-2xl">
+        <nav className="bg-light_neutral py-4 px-4">
+            <h1 className="font-bold text-2xl pl-4">
                 Projects
             </h1>
             <div className="flex flex-wrap justify-around"> 
                 {projects.map((e) => (
                     <Project title={e.title} summary={e.summary} id={e.id}/>
-                
                 ))
             }
             </div>

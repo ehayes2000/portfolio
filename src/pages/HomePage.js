@@ -1,12 +1,12 @@
 import Header from "../components/Header";
 import Projects from "../components/Projects";
-import Experience from "../components/Experience";
+import Experiences from "../components/Experiences";
 
 const HomePage = () => (
     <div className="bg-pbg">
         <Header />
         <Projects />
-        {/* <Experience /> */}
+        <Experiences />
     </div>
     
 );
