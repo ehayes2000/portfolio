@@ -30,11 +30,11 @@ const MyNavbar = () => {
             onToggle={() => setExpanded(!expanded)}
             fixed="top"
             expand="md"
-            className={`bg-slate-500 ${sticky ? "fixed top-0 w-full" : ""}`}
+            className={`bg-slate-300 ${sticky ? "fixed top-0 w-full" : ""}`}
         >
             <Container className="flex justify-between">
 
-            <Navbar.Brand className="font-bold text-2xl lg:ml-60 md:ml-4" as={Link} to="/">
+            <Navbar.Brand className="font-bold text-2xl" as={Link} to="/">
                     EH
                 </Navbar.Brand>
                 <Navbar.Toggle 
@@ -42,7 +42,7 @@ const MyNavbar = () => {
                     onClick={() => setExpanded(!expanded)} 
                 />
                 <Navbar.Collapse className="flex">
-                    <Nav className="flex" defaultActiveKey="#home">
+                    <Nav className="flex ms-auto" defaultActiveKey="#home">
                         <Nav.Item className="mx-4">
                             <Nav.Link as={Link} to="/">   
                             <AiOutlineHome/>Home
@@ -61,7 +61,7 @@ const MyNavbar = () => {
                                 <AiOutlineFundProjectionScreen/>Projects
                             </Nav.Link>
                         </Nav.Item>
-                        <Nav.Item className="mx-4 lg:mr-60 md:mr-4">
+                        <Nav.Item className="mx-4">
                             <Nav.Link as={Link} to="/resume">
                                 <CgFileDocument/>Resume
                             </Nav.Link>
