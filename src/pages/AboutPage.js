@@ -4,7 +4,7 @@ import Skills from "../components/about/Skills";
 
 const AboutPage = () => {
     return (
-        <div>
+        <div className="bg-neutral-100 flex">
             <MyNavbar/>
             <div className="lg:mx-40 md:mx-20 sm:mx-10 xs:mx-4">
                 <AboutMe/>

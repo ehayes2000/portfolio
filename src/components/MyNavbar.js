@@ -26,51 +26,58 @@ const MyNavbar = () => {
     }, [])
     return (
         <Navbar 
-            expanded={expanded}
-            onToggle={() => setExpanded(!expanded)}
-            fixed="top"
-            expand="md"
-            className={`bg-slate-300 ${sticky ? "fixed top-0 w-full" : ""}`}
-        >
-            <Container className="flex justify-between">
-
-            <Navbar.Brand className="font-bold text-2xl" as={Link} to="/">
-                    EH
-                </Navbar.Brand>
-                <Navbar.Toggle 
-                    aria-controls="responsive-navbar-nav" 
-                    onClick={() => setExpanded(!expanded)} 
-                />
-                <Navbar.Collapse className="flex">
-                    <Nav className="flex ms-auto" defaultActiveKey="#home">
-                        <Nav.Item className="mx-4">
-                            <Nav.Link as={Link} to="/">   
-                            <AiOutlineHome/>Home
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item className="mx-4">
-                            <Nav.Link   
-                                as={Link}
-                                to="/about"
-                            >
-                                <AiOutlineUser/>About
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item className="mx-4">
-                            <Nav.Link as={Link} to="/projects">
-                                <AiOutlineFundProjectionScreen/>Projects
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item className="mx-4">
-                            <Nav.Link as={Link} to="/resume">
-                                <CgFileDocument/>Resume
-                            </Nav.Link>
-                        </Nav.Item>
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
-    )
-}
+  expanded={expanded}
+  onToggle={() => setExpanded(!expanded)}
+  fixed="top"
+  expand="md"
+  className={`transition ease-in duration-150 ${sticky ? "fixed top-0 w-full bg-neutral-50 bg-opacity-20 backdrop-blur-sm" : "bg-transparent"} `}
+>
+  <Container className="flex justify-between text-black ">
+    <Navbar.Brand className="font-bold text-2xl" as={Link} to="/">
+      EH
+    </Navbar.Brand>
+    <Navbar.Toggle 
+      aria-controls="responsive-navbar-nav" 
+      onClick={() => setExpanded(!expanded)} 
+    />
+    <Navbar.Collapse className="flex">
+      <Nav className="flex ms-auto" defaultActiveKey="#home">
+        <Nav.Item className="mx-4 transition transform hover:scale-105 hover:-translate-y-1">
+          <Nav.Link as={Link} to="/">   
+            <div className="flex items-center">
+              <AiOutlineHome className="mr-2"/>
+              Home
+            </div>
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item className="mx-4 transition transform hover:scale-105 hover:-translate-y-1">
+          <Nav.Link as={Link} to="/about">
+            <div className="flex items-center">
+              <AiOutlineUser className="mr-2"/>
+              About
+            </div>
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item className="mx-4 transition transform hover:scale-105 hover:-translate-y-1">
+          <Nav.Link as={Link} to="/projects">
+            <div className="flex items-center">
+              <AiOutlineFundProjectionScreen className="mr-2"/>
+              Projects
+            </div>
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item className="mx-4 transition transform hover:scale-105 hover:-translate-y-1">
+          <Nav.Link as={Link} to="/resume">
+            <div className="flex items-center">
+              <CgFileDocument className="mr-2"/>
+              Resume
+            </div>
+          </Nav.Link>
+        </Nav.Item>
+      </Nav>
+    </Navbar.Collapse>
+  </Container>
+</Navbar>)
+}   
 
 export default MyNavbar;

@@ -1,10 +1,11 @@
 import Intro from "../components/home/Intro";
 import MyNavbar from "../components/MyNavbar";
+import backgroundImage from "../assets/forest.webp";
 
 const HomePage = () => (
-    <div>
+    <div className="bg-neutral-100">
         <MyNavbar/>
-        <Intro/>
+        <Intro/>    
     </div>
     
 );

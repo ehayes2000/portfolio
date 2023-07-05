@@ -3,7 +3,6 @@ import Projects from "../components/project/Projects";
 
 const ProjectPage = () => (
   <div>
-      kys
       <MyNavbar/>
       <Projects/>
   </div>
