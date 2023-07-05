@@ -2,9 +2,8 @@ import MyNavbar from "../components/MyNavbar";
 
 const ResumePage = () => {
     return (
-        <div>
+        <div className="bg">
             <MyNavbar/>
-            Resume
         </div>
     )
 }

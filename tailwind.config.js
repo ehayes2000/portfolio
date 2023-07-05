@@ -11,11 +11,11 @@ module.exports = {
         'inner-4xl': 'inset 0 4px 8px 0 rgba(0, 0, 0, 0.06), inset 0 4px 20px 0 rgba(0, 0, 0, 0.07)',
       },
       colors: {
-          primary: '#303030',
-          secondary: "#696969",
-          nuetral: '#C0C0C0',
-          light_neutral: '#F0F0F0',
-          accent: "#0047AB"
+        background: "#F1F5F9", // "slage-50",
+        primary: "#0c0a09",
+        secondar: "#1e293b",
+        accent: "#818cf8", 
+        hightlight: "#4338ca",
       }
     },
   },
