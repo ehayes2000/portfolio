@@ -22,7 +22,7 @@ const AboutMe = () => (
           </ul>
         </div>
       </div>
-      <div className="w-full md:w-1/3 pt-20 flex justify-center md:justify-end">
+      <div className="w-full md:w-1/3 pt-20 flex justify-center">
         <img
           className="h-80 w-80 rounded-full object-cover shadow-2xl"
           src="/images/me2.jpg"

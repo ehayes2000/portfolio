@@ -1,6 +1,6 @@
 
 const ExperienceCard = (props) => (
-    <div className="relative  h-full rounded-xl shadow-lg p-4">
+    <div className="cursor-pointer relative h-full rounded-xl shadow-lg p-4">
             <details>
                 <summary className="flex justify-between items-start">
                     <div>

@@ -5,9 +5,9 @@ import Experience from "../components/about/Experience";
 
 const AboutPage = () => {
     return (
-        <div className="bg">
+        <div className="bg-white">
             <MyNavbar/>
-            <div className="lg:mx-40 md:mx-20 sm:mx-10 xs:mx-4">
+            <div className="lg:mx-40 md:mx-20 sm:mx-10 xs:mx-4 pt-20">
                 <AboutMe/>
                 <Skills/>
                 <Experience/>
