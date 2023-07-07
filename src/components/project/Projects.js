@@ -10,7 +10,7 @@ const Projects = () => (
                 Here are a few projects I've worked on recently.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div>
+                <div className="flex">
                     <ProjectCard
                         title="Password Game"
                         source="https://github.com/ehayes2000/password-game"
@@ -22,7 +22,7 @@ const Projects = () => (
                                 css / tailwind. Live now!"
                     />
                 </div>
-                <div>
+                <div className="flex">
                     <ProjectCard
                         title="Online Chess"
                         source="https://github.com/ehayes2000/chessv2"
@@ -33,7 +33,7 @@ const Projects = () => (
                         offers quick and easy chess games. This site has no users so if you want to try it out open it in two browers."
                     />
                 </div>
-                <div>
+                <div className="flex">
                     <ProjectCard
                         title="Moving Pose"
                         source="https://github.com/MehmetMHY/moving-pose"
@@ -44,13 +44,12 @@ const Projects = () => (
                                 My main role was data preprocessing, normalization, storage, and visualization."
                     />
                 </div>
-                <div>
+                <div className="flex justify-center">
                     <ProjectCard
                         title="This website"
                         source="https://github.com/ehayes2000/portfolio"
                         img={process.env.PUBLIC_URL + "/images/this-website.png"}
-                        subtitle="A portfolio"
-                        summary="You're already here"
+                        subtitle="A portfolio"  
                     />
                 </div>
             </div>
