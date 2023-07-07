@@ -15,7 +15,7 @@ function ProjectCards(props) {
         <h2 className="text-lg text-gray-500">
           {props.subtitle}
         </h2>
-        <p className="text-sm">
+        <p className="text-sm text-left">
           {props.summary}
         </p>
       </div>
