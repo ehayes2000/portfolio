@@ -15,7 +15,7 @@ const Intro = () => (
     <div>
       <img
         className="h-80 w-80 rounded-full object-cover shadow-2xl"
-        src="/images/me.jpg"
+        src={process.env.PUBLIC_URL + '/images/me.jpg'}
         alt="My Picture"
       />
     </div>

@@ -25,7 +25,7 @@ const AboutMe = () => (
       <div className="w-full md:w-1/3 pt-20 flex justify-center">
         <img
           className="h-80 w-80 rounded-full object-cover shadow-2xl"
-          src="/images/me2.jpg"
+          src={process.env.PUBLIC_URL + '/images/me2.jpg'}
           alt="My Picture"
         />
       </div>

@@ -15,7 +15,7 @@ const Projects = () => (
                         title="Password Game"
                         source="https://github.com/ehayes2000/password-game"
                         demo="https://ehayes2000.github.io/password-game/"
-                        img="/images/password-game.png"
+                        img={process.env.PUBLIC_URL + "/images/password-game.png"}
                         subtitle="Infuriatingly secure"
                         summary="A static website that requires increasingly ridiculous rules to be met. 
                                 Written with react and tailwind this site was built to practice with react and learn
@@ -27,7 +27,7 @@ const Projects = () => (
                         title="Online Chess"
                         source="https://github.com/ehayes2000/chessv2"
                         demo="http://chessapp-env.eba-ds87phsx.us-west-2.elasticbeanstalk.com/"
-                        img="/images/chess-game.png"
+                        img={process.env.PUBLIC_URL + "/images/chess-game.png"}
                         subtitle="2ke2!"
                         summary="An online chess game. Play real time live chess with someone online. Built using a react/tailwind frontend and an AWS backend this site 
                         offers quick and easy chess games. This site has no users so if you want to try it out open it in two browers."
@@ -37,7 +37,7 @@ const Projects = () => (
                     <ProjectCard
                         title="Moving Pose"
                         source="https://github.com/MehmetMHY/moving-pose"
-                        img="/images/moving-pose.png"
+                        img={process.env.PUBLIC_URL + "/images/moving-pose.png"}
                         subtitle="Categorize action with video and AI"
                         summary="A school project implimenting the work of a research paper to classify human action with a video stream. 
                                 This project is able to classify acttions into one of 16 categories where inputs consist of a video stream of 30 to 200 frames. 
@@ -48,7 +48,7 @@ const Projects = () => (
                     <ProjectCard
                         title="This website"
                         source="https://github.com/ehayes2000/portfolio"
-                        img="/images/this-website.png"
+                        img={process.env.PUBLIC_URL + "/images/this-website.png"}
                         subtitle="A portfolio"
                         summary="You're already here"
                     />
