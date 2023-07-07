@@ -8,6 +8,7 @@ function ProjectCards(props) {
       <div className="w-full h-64 rounded-lg overflow-hidden">
         <img src={props.img} alt={props.title} className="w-full h-full object-cover" />
       </div>
+
       <div className="text-center flex-grow">
         <h1 className="font-bold text-xl">
           {props.title}
