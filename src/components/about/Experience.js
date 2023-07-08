@@ -1,7 +1,7 @@
 import ExperienceCard from "./ExperienceCard"
 
 const Experience = () => (
-    <div className="mb-16">
+    <div className="mb-16 px-24">
         <h1 className="text-center text-4xl font-bold mb-6">
             Professional Experience
         </h1>

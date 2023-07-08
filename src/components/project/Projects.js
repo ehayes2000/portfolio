@@ -1,7 +1,7 @@
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center px-20">
         <div className="w-full max-w-6xl">
             <h1 className="text-4xl font-bold text-center">
                 My Work
