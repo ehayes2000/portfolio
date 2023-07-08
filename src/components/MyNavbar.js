@@ -33,7 +33,7 @@ const MyNavbar = () => {
                 <Link to="/" className="font-bold text-3xl">
                     EH.
                 </Link>
-                <div className={`absolute top-full left-0 w-full bg-white transform transition-transform duration-200 ease-in-out overflow-hidden ${expanded ? "max-h-screen" : "max-h-0"} md:static md:max-h-full md:bg-transparent md:flex md:items-center md:w-auto`} id="menu">
+                <div className={`absolute top-full left-0 w-full bg-white transform transition-transform duration-200 ease-in-out ${expanded ? "max-h-screen" : "max-h-0"} md:static md:max-h-full md:bg-transparent md:flex md:items-center md:w-auto`} id="menu">
                     <Link to="/" className="px-4 block mt-4 md:inline-block md:mt-0 mr-6 text-xl text-stone-950 hover:scale-105 transition duration-50">
                       <div className="flex items-center">
                       <AiOutlineHome className="mr-2"/>Home
